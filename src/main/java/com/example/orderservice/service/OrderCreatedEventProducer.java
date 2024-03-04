@@ -21,5 +21,6 @@ public class OrderCreatedEventProducer {
        log.info("Order crearted: {}", event.getOrderId());
         kafkaTemplate.send(topic,event);
 
+
     }
 }
